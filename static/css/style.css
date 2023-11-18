@@ -1,0 +1,57 @@
+body{
+    background-image: url('../images/i3.jpg');
+    background-size: cover; 
+}
+
+.form{
+    position:relative;
+    background-color: rgba(255, 255, 255, 1);
+    max-width:fit-content;
+    margin:auto;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    font-weight:500;
+}
+
+.form input {
+    text-align: center;
+    background-color:rgb(223, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-container input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.predict-button {
+    background-color: #007BFF;
+    color: #da1212;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.predict-button:hover {
+    background-color: #0056b3;
+}
+.form input{
+    
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #013d7c;
+}

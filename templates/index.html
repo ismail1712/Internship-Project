@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='css/style.css') }}">             
+</head>
+<body>
+</head>
+<body>
+    {% extends 'base.html' %} 
+    {% block content %}
+    <div class="register_page">
+        <div class="form">
+            {% include 'message.html' %}
+            <form action="http://127.0.0.1:5000/predict" method="POST">
+                
+               Engine Size: <input type="number" name='enginesize' placeholder="Enter the engine size"> <br>
+                Wheelbase: <input type="number" name='wheelbase' placeholder="Enter the Wheelbase value"><br>
+                Horsepower: <input type="number" name='horsepower' placeholder="Enter the Horsepower"><br>
+               Peak RPM: <input type="number" name='peakrpm' placeholder="Enter the peak RPM" ><br>
+                City MPG: <input type="number" name='citympg'placeholder="Enter the city MPG" ><br>
+               Number Of Doors: <input type="number" name='numdoors'placeholder="Enter the number of doors"><br></br>
+                <input type="submit" value="Predict"  >
+            </form>
+            <p> Predicted Price in America : {{prediction}}</p>
+        </div>
+
+    </div>
+    {% endblock %}
+</body>
+</html>
